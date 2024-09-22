@@ -1,0 +1,119 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    tools:context=".MainActivity">
+
+    <TableLayout
+        android:id="@+id/tableLayout"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        tools:layout_editor_absoluteX="1dp"
+        tools:layout_editor_absoluteY="0dp">
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <TextView
+                android:id="@+id/txtsoa"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="5dp"
+                android:text="Số A:" />
+
+            <EditText
+                android:id="@+id/editA"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="30dp"
+                android:ems="10"
+                android:inputType="number" />
+        </TableRow>
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <TextView
+                android:id="@+id/txtsob"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="5dp"
+                android:text="Số B:" />
+
+            <EditText
+                android:id="@+id/editB"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="30dp"
+                android:ems="10"
+                android:inputType="number" />
+
+        </TableRow>
+
+    </TableLayout>
+
+    <TextView
+        android:id="@+id/txtkq"
+        android:layout_width="410dp"
+        android:layout_height="45dp"
+        android:layout_marginTop="116dp"
+        android:background="#2196F3"
+        android:textColor="@color/black"
+        android:textSize="20sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <LinearLayout
+        android:layout_width="414dp"
+        android:layout_height="0dp"
+        android:layout_marginTop="30dp"
+        android:orientation="vertical"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/txtkq">
+
+        <Button
+            android:id="@+id/btnTong"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="TỔNG 2 SỐ" />
+
+        <Button
+            android:id="@+id/btnHieu"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="HIỆU 2 SỐ" />
+
+        <Button
+            android:id="@+id/btnTich"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="TÍCH 2 SỐ" />
+
+        <Button
+            android:id="@+id/btnThuong"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="THƯƠNG 2 SỐ" />
+
+        <Button
+            android:id="@+id/btnUCLN"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="ƯỚC CHUNG LỚN NHẤT" />
+
+        <Button
+            android:id="@+id/btnThoat"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="THOÁT CHƯƠNG TRÌNH" />
+    </LinearLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
