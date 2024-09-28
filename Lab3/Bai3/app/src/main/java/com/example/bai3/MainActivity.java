@@ -39,7 +39,7 @@ public class MainActivity extends AppCompatActivity {
         btntinhBMI.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                // Move the parsing inside the onClick listener
+               
                 try {
                     double H = Double.parseDouble(editCCao.getText().toString());
                     double W = Double.parseDouble(editCNang.getText().toString());
@@ -62,8 +62,7 @@ public class MainActivity extends AppCompatActivity {
                     editBMI.setText(dcf.format(BMI));
                     editCDoan.setText(chuandoan);
                 } catch (NumberFormatException e) {
-                    // Handle if the user input is not a valid number
-                    // You can show a Toast or set a default message
+
                     editBMI.setText("");
                     editCDoan.setText("Vui lòng nhập số hợp lệ");
                 }
