@@ -21,105 +21,37 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
-    <EditText
-        android:id="@+id/editTextText"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginStart="54dp"
-        android:layout_marginTop="43dp"
-        android:layout_marginEnd="147dp"
-        android:ems="10"
-        android:inputType="text"
-        android:text="Công nghệ phần mềm"
+    <ListView
+        android:id="@+id/lv"
+        android:layout_width="0dp"
+        android:layout_height="302dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="38dp"
+        android:layout_marginEnd="14dp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/textView4" />
-
-    <EditText
-        android:id="@+id/editTextText2"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginStart="54dp"
-        android:layout_marginEnd="147dp"
-        android:ems="10"
-        android:inputType="text"
-        android:text="Web"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/editTextText" />
-
-    <EditText
-        android:id="@+id/editTextText3"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginStart="54dp"
-        android:layout_marginEnd="147dp"
-        android:ems="10"
-        android:inputType="text"
-        android:text="Di động"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/editTextText2" />
-
-    <EditText
-        android:id="@+id/editTextText4"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginStart="54dp"
-        android:layout_marginEnd="147dp"
-        android:ems="10"
-        android:inputType="text"
-        android:text="Giao diện"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/editTextText3" />
-
-    <EditText
-        android:id="@+id/editTextText5"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginStart="54dp"
-        android:layout_marginEnd="147dp"
-        android:ems="10"
-        android:inputType="text"
-        android:text="Mạng máy tính"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/editTextText4" />
-
-    <EditText
-        android:id="@+id/editTextText6"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginStart="54dp"
-        android:layout_marginEnd="147dp"
-        android:ems="10"
-        android:inputType="text"
-        android:text="Hệ điều hành"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/editTextText5" />
 
     <Button
         android:id="@+id/btnTroVe"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="84dp"
-        android:layout_marginTop="43dp"
+        android:layout_marginTop="16dp"
         android:text="Trở về"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/editTextText6" />
+        app:layout_constraintTop_toBottomOf="@+id/lv" />
 
     <Button
         android:id="@+id/btnThoat"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="66dp"
-        android:layout_marginTop="43dp"
+        android:layout_marginTop="16dp"
         android:layout_marginEnd="85dp"
         android:text="Thoát"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toEndOf="@+id/btnTroVe"
-        app:layout_constraintTop_toBottomOf="@+id/editTextText6" />
+        app:layout_constraintTop_toBottomOf="@+id/lv" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
